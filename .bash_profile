@@ -8,6 +8,7 @@ alias f="open ."
 
 # ファイル一覧
 alias ll="ls -la"
+alias la="ls -a"
 
 # python
 export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
@@ -70,9 +71,8 @@ export JRUBY_OPTS="-Xcext.enabled=true"
 export EDITOR=/usr/bin/vim
 export SHELL=/bin/bash
 
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-alias less='/usr/local/Cellar/vim/7.4.488/share/vim/vim74/macros/less.sh'
+alias less='/usr/local/Cellar/vim/7.4.712/share/vim/vim74/macros/less.sh'
 

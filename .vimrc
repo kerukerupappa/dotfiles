@@ -76,10 +76,10 @@ let g:vimfiler_edit_action = 'tabopen'
 nmap bd :bdelete!
 
 " キーマッピング
-nnoremap OA gi<Up>
-nnoremap OB gi<Down>
-nnoremap OC gi<Right>
-nnoremap OD gi<Left>
+nmap OA gi<Up>
+nmap OB gi<Down>
+nmap OC gi<Right>
+nmap OD gi<Left>
 
 " 「コピーした文字で、繰り返し上書きペーストしたい
 vnoremap <silent> <C-p> "0p<CR>
@@ -88,12 +88,12 @@ vnoremap <silent> <C-p> "0p<CR>
 inoremap <ESC> <ESC>:set iminsert=0<CR>
 
 " 置換
-nnoremap gs :<C-u>%s//g<Left><Left>
+nmap gs :<C-u>%s//g<Left><Left>
 vnoremap gs :s//g<Left><Left>
 
 " 検索
-nnoremap <Space>/ *<C-o>
-nnoremap g<Space>/ g*<C-o>
+nmap <Space>/ *<C-o>
+nmap g<Space>/ g*<C-o>
 
 " エスケープ
 inoremap <silent> jj <ESC>
@@ -118,7 +118,6 @@ function! s:LoadBundles()
   NeoBundle 'Shougo/unite.vim'
   NeoBundle 'Shougo/neocomplete'
   NeoBundle 'Shougo/vimfiler'
-  " NeoBundle 'Shougo/vimproc.vim'
   NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
