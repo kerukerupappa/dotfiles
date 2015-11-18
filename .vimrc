@@ -137,7 +137,6 @@ function! s:LoadBundles()
 
 endfunction
 
-
 " NeoBundle がインストールされているなら LoadBundles() を呼び出す
 " そうでないなら WithoutBundles() を呼び出す
 function! s:InitNeoBundle()
@@ -149,8 +148,8 @@ function! s:InitNeoBundle()
     try
       call neobundle#begin(expand('~/.vim/bundle/'))
       NeoBundleFetch 'Shougo/neobundle.vim'
-      call neobundle#end()
       call s:LoadBundles()
+      call neobundle#end()
   catch
       call s:WithoutBundles()
     endtry
